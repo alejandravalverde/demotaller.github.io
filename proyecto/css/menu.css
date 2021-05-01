@@ -1,0 +1,54 @@
+/*Tamaño menu y centrar*/
+nav{
+	width: 615px;
+	height: 30px;
+	margin: 0 auto;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/*Quitar la viñeta a la lista*/
+ul{
+  list-style: none;
+}
+
+/*Fijar en pantalla y que las opciones tapen el fondo*/
+#menu{
+  position: absolute; 
+  z-index: 100;
+}
+
+/*Estilo de las instrucciones a */
+#menu li>a{
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+ }
+
+ /*Efecto al pasar el mouse*/
+#menu li>a:hover{
+  color: black;
+  background-color: #eaeaea;
+  transition: all 0.3s ease-in-out 0s;
+ }
+
+/*Flota todo el menu en la parte izquierda y coloca las opciones en el centro*/
+#menu>li{
+  float: left;
+  text-align:center
+}
+
+/*Oculta las opciones de los submenus*/
+#menu>li>ul{
+  display: none;
+}
+
+/*Al pasar el mouse despliega opciones en bloque del submenu*/
+#menu>li:hover>ul {
+  display:block;
+}
+
+
